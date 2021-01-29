@@ -1,0 +1,30 @@
+{% extends 'core/base/navbar-fixed.html' %}
+{% load static %}
+<!-- saved from url=(0060)https://getbootstrap.com/docs/4.6/examples/starter-template/ -->
+{% block title %}Starter Template · Bootstrap v4.6{% endblock %}
+
+{% block canonical %}
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/starter-template/">
+{% endblock %}
+
+{% block custom_styles %}
+    <link href="{% static 'core/assets/css/bootstrap/4.6.0/starter-template.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block template %}
+    {{ block.super }}
+    <main role="main" class="container">
+
+        <div class="starter-template">
+            <h1>Bootstrap starter template</h1>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text
+                and a
+                mostly barebones HTML document.</p>
+            {% for i in "x"|rjust:"20"|make_list %}
+                <br>
+            {% endfor %}
+            k
+        </div>
+
+    </main>
+{% endblock %}
