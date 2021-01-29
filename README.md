@@ -34,6 +34,9 @@ O también puede utilizar un intérprete de Python de su elección
 * Instale las migraciones
 ###
     python manage.py migrate
+* Agupe los archivos estaticos
+###
+    python manage.py collectstatic
 * Ejecute el servidor
 ###
     python manage.py runserver
